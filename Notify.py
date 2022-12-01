@@ -34,7 +34,7 @@ def send_alert_attached(subject):
     <td style="padding: 5px"> Ubuntu </td> 
     <td style="padding: 5px"> 22.04 </td>
     <td style="padding: 5px"> 152187 </td>
-    <td style="padding: 5px"> 2022-11-30 11:32:12 </td>
+    <td style="padding: 5px">  </td>
     <td style="padding: 5px"> comunidadErick </td>
     </tr>
 
@@ -52,7 +52,7 @@ def send_alert_attached(subject):
     msg['From'] = mailsender
     msg['To'] = mailreceip
 
-    fp = open(imgpath+'deteccionCPU.png', 'rb')
+    fp = open(imgpath+'deteccionRam.png', 'rb')
     img = MIMEImage(fp.read())
     fp.close()
 
